@@ -1,0 +1,13 @@
+#MyDemoDiv{
+    color: pink;
+}
+#myButton{
+    color:#f20d6b; 
+    background-color: #0DF294; 
+    width: 100px;
+     height: 60px;
+     font-style: italic; border-radius: 6px; border: #0DF294 solid 1px;
+}
+.first{
+    color: green;
+}
