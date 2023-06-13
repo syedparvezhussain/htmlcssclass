@@ -1,13 +1,60 @@
-#MyDemoDiv{
-    color: pink;
+.mainheader{
+    background-color:  #a49797;
+    background-image: url("/myFolder/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 32vh;
+  }
+  .headingtitle{
+    border: 1px solid #c4b7df;
+    width: 124px;
+    height: 124px;
+    background-color: #462688;
+    border-radius: 50%;
+    color: white;
+    position: relative;
+    right: 880px;
+    top: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.headerTitleDiv{
+    display: flex;
+    justify-content: space-between;
 }
-#myButton{
-    color:#f20d6b; 
-    background-color: #0DF294; 
+li{
+    list-style-type: none;
+    margin:10px;
+}
+.liHeader{
     width: 100px;
-     height: 60px;
-     font-style: italic; border-radius: 6px; border: #0DF294 solid 1px;
+    border: 4px solid #c2a0ef;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #a574f7;
 }
-.first{
-    color: green;
+.liHeader:hover{
+    background-color: #5d00ff; 
+    cursor: pointer;
+}
+.liHeader:active{
+    background-color: #a574f7; 
+}
+.headerNav{
+    display: flex;
+
+    float: right;
+}
+.listMenuHeader{
+    
+    display: flex;
+}
+.logoMain{
+    position: fixed;
+    width: 71px;
+    right: 68px;
+    /* height: 87px; */
+    top: 10px;
 }
