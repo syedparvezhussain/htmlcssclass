@@ -10,25 +10,38 @@
 <body>
 
     <header class="mainheader"> 
+
         <div class="headerTitleDiv">
-            <h2> Menu</h2>
-        <h1 class = "headingtitle">flow in !</h1>
-   
+        
+        <p class = "headingtitle">flow in !</p>
+
     <img class="logoMain" src="/myFolder/logo.png" alt="logo">
     </div>
         <nav class="headerNav">
             <ul class="listMenuHeader">
-            <li class="liHeader" >home</li>
-            <li  class="liHeader" >about us</li>
-            <li  class="liHeader" >popular</li>
-            <li  class="liHeader" >contact us</li>
+            <li class="liHeader" > <a href="http://127.0.0.1:5500/page2.html">Home</a></li>
+            <li  class="liHeader" >About</li>
+            <li  class="liHeader" >Popular</li>
+            <li  class="liHeader" >Contact</li>
         </ul>
         </nav>
     </header>
-    <section>
-        leftpanal
+
+    <div class="mainContent">
+    <section class="leftPanal">
+      <div> Options</div> 
+  
+      <lable for="categories" class="lableOptions">
+            choose from different Options
+      </lable>
+      <select name="categories"  class="dropDownLeftPanal" id="categories">
+        <option value="Eestivals">Eestivals</option>
+        <option value="Events">Events</option>
+        <option value="Rituals">Rituals</option>
+      </select>
     </section>
-    <main>
+
+    <main class="bodyMain">
         main page
         <div>
 card 1
@@ -41,6 +54,9 @@ card 3
         </div>
 
     </main>
+    </div>
+
+
     <footer>
         <a href="">facebook</a>
         <a href="">linkedin</a>

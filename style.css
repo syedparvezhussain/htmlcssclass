@@ -1,24 +1,23 @@
 .mainheader{
     background-color:  #a49797;
-    background-image: url("/myFolder/header.png");
-    background-repeat: no-repeat;
+    background-repeat:space;
     background-size: cover;
-    height: 32vh;
+    background-image: url(/myFolder/header.png);
+    height: 25vh;
+    width:100vw;
   }
   .headingtitle{
     border: 1px solid #c4b7df;
-    width: 124px;
-    height: 124px;
+    width: 10%;
     background-color: #462688;
     border-radius: 50%;
     color: white;
-    position: relative;
-    right: 880px;
-    top: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+    padding: 10px;
+}
+  
 .headerTitleDiv{
     display: flex;
     justify-content: space-between;
@@ -30,6 +29,7 @@ li{
 .liHeader{
     width: 100px;
     border: 4px solid #c2a0ef;
+    padding:10px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -43,18 +43,50 @@ li{
     background-color: #a574f7; 
 }
 .headerNav{
-    display: flex;
-
-    float: right;
+margin-right: 10px;
 }
 .listMenuHeader{
-    
     display: flex;
+    justify-content: flex-end;
 }
 .logoMain{
     position: fixed;
     width: 71px;
     right: 68px;
-    /* height: 87px; */
     top: 10px;
+    mix-blend-mode: multiply;
+}
+.mainContent{
+    border: 1px solid;
+    display: flex;
+    flex: 1 2 auto;
+    justify-content: space-around;
+    height: 65vh;
+}
+.leftPanal{
+
+    border:1px solid red;
+    margin-left:10px;
+
+}
+.bodyMain{
+    flex: 2 auto;
+    margin-right:0px;
+}
+.dropDownLeftPanal{
+    position: relative;
+    top: 19px;
+    right: 100px;
+}
+@media only screen and (max-width: 600px) {
+    .listMenuHeader{
+        display: inline;
+        justify-content: flex-end;
+    } 
+    .liHeader{
+        width: 30px;
+    }
+    .leftPanal{
+        display: none;
+    }
 }
