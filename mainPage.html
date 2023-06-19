@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ 
 
     <header class="mainheader"> 
 
@@ -41,9 +42,9 @@
       </select>
     </section>
 
-    <main class="bodyMain">
-        main page
-        <div>
+    <main class="bodyMain" id="bodyMain">
+       <h1 id="mainPageHeading"> main page</h1>
+        <!-- <div>
 card 1
         </div>
         <div>
@@ -51,16 +52,73 @@ card 1
         </div>
         <div>
 card 3
-        </div>
-
+        </div> -->
+   
     </main>
     </div>
 
 
-    <footer>
+    <footer style="padding:2px;">
         <a href="">facebook</a>
         <a href="">linkedin</a>
     </footer>
-    
+    <script>
+        let myData= [
+         {
+             "names":"soemthingelse", 
+             "color":"black", 
+             "price":"20", 
+             "quantity":"30",
+             "image":"/myFolder/1.png"
+         },
+        {
+             "names":"lilly", 
+             "color":"blue", 
+             "price":"20", 
+             "quantity":"30",
+             "image":"/myFolder/header.png"
+         },
+     {
+             "names":"jasmin", 
+             "color":"pink", 
+             "price":"20", 
+             "quantity":"30",
+             "image":"/myFolder/logo.png"
+         },
+         {
+             "names":"parvez", 
+             "color":"pink", 
+             "price":"20", 
+             "quantity":"30",
+             "image":"/myFolder/logo.png"
+         },
+         {
+             "names":"zuber", 
+             "color":"pink", 
+             "price":"20", 
+             "quantity":"30",
+             "image":"/myFolder/1.png"
+         }
+     ]
+     const bodyId = document.getElementById("bodyMain")
+     for(let x = 0; x<myData.length; x++){
+           const myDivOfFlowers =  document.createElement("div")
+           myDivOfFlowers.setAttribute("class", "myImageDiv")
+
+           const heading =  document.createElement("h1")
+           heading.innerText = myData[x]["names"]
+
+           const imageDiv = document.createElement("img")
+           imageDiv.setAttribute("src", myData[x]["image"] )
+           imageDiv.setAttribute("alt", myData[x]["names"]+"thi image is ubale to load" )
+           imageDiv.setAttribute("class", "myimageClass" )
+         //   console.log(myData[x])
+         myDivOfFlowers.appendChild(heading)
+         myDivOfFlowers.appendChild(imageDiv)
+         bodyId.appendChild(myDivOfFlowers)
+     
+     }
+     console.log(myData)
+         </script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enter first value<input type="text" id="input1"/>
+    enter second value<input type="text" id="input2"/><br><br>
+    <div style="display: flex;
+    justify-content: space-between;
+    width: 25vw; left: 25vw;
+    align-items: stretch;">
+        <button onclick="doTheJOB('add');">ADD</button>
+        <button onclick="doTheJOB('sub');">SUB</button>
+        <button onclick="doTheJOB('mul');">MUL</button>
+        <button onclick="doTheJOB('parvez');">do someting else </button>
+        <button onclick="doTheJOB('div');">DIV</button>
+    </div>
+    <p id="result"></p>
+    <script>
+       function doTheJOB(command){
+        const value1 = document.getElementById("input1").value
+        const value2 = document.getElementById("input2").value
+        console.log(command)
+        let resultFromBelow= ""
+ switch(command){
+    case "add":
+    resultFromBelow= Number(value1)+Number(value2)
+    break;
+    case "sub":
+    resultFromBelow= Number(value1)-Number(value2)
+    break;
+    case "mul":
+    resultFromBelow= Number(value1)*Number(value2)
+    break;
+    case "div":
+    resultFromBelow= Number(value1)/Number(value2)
+    break;
+    default: 
+    resultFromBelow= "you are not calling the funciton from where its suposed to be called"
+ }
+        document.getElementById("result").textContent = "Result: " + resultFromBelow;
+       }    
+       const x= ()=>"something" 
+
+    </script>
+
+</body>
+</html>

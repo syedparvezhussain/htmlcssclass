@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                handlesometingelse();
+        function handleClick (){
+     
+           const divType= document.getElementById("input1").value
+           const htmlContent = document.getElementById("input2").value
+           const attributeFlag = document.getElementById("input3").value;       
+            console.log(attributeFlag)
+   
+           const newElement = document.createElement(divType)
+           if(divType == "img"){
+            newElement.setAttribute("src", htmlContent)
+           }
+           else{
+   
+            if(attributeFlag === "yes"){
+                newElement.setAttribute("style", htmlContent)
+            }
+            else{
+                newElement.innerHTML = htmlContent
+            }
+           }
+           
+           document.getElementById("mainContainer").appendChild(newElement)
+      
+        }
+
+
+    </script>
+
+    enter which element you want to generate
+    <input type="text" id="input1"/>
+    enter what you want in the inner HTML
+    <input type="text" id="input2"/>
+set attribute radio
+<input type="text" id="input3"/>
+    <button onclick="handleClick()">
+        generate tags
+    </button>
+    <div id="mainContainer">
+
+    </div>
+</body>
+</html>
